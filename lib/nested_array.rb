@@ -29,10 +29,11 @@ def sorted_matrix
     ORGANIC_PRODUCE
   ]
 
+sorted_produce =[]
   all_produce.length.times do |index|
-     all_produce[index].sort
+    sorted_produce << all_produce[index].sort
   end
-  all_produce
+  sorted_produce
 end
 
 def matrix_lookup(matrix, row, column)
