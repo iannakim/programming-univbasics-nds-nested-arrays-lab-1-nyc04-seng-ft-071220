@@ -29,8 +29,8 @@ def sorted_matrix
     ORGANIC_PRODUCE
   ]
 
-  all_produce.times do |index|
-    all_produce[index].sort
+  all_produce.length.times do |index|
+     all_produce[index].sort
   end
   all_produce
 end
