@@ -28,10 +28,11 @@ def sorted_matrix
     CONVENTIONAL_PRODUCE,
     ORGANIC_PRODUCE
   ]
-  
+
   all_produce.times do |index|
     all_produce[index].sort
   end
+  all_produce
 end
 
 def matrix_lookup(matrix, row, column)
