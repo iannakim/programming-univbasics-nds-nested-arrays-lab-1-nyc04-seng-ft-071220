@@ -25,10 +25,13 @@ end
 
 def sorted_matrix
   all_produce = [
-    CONVENTIONAL_PRODUCE.sort,
-    ORGANIC_PRODUCE.sort
+    CONVENTIONAL_PRODUCE,
+    ORGANIC_PRODUCE
   ]
-  all_produce
+  
+  all_produce.times do |index|
+    all_produce[index].sort
+  end
 end
 
 def matrix_lookup(matrix, row, column)
